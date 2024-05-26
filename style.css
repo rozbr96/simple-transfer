@@ -1,0 +1,38 @@
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.options-wrapper {
+  width: 40%;
+
+  > .options-title {
+    text-align: center;
+  }
+
+  > .options-list {
+    height: 400px;
+    overflow-y: auto;
+  }
+}
+
+ul {
+  list-style-type: none;
+
+  > li {
+    &:hover {
+      cursor: pointer;
+    }
+
+    > span {
+      display: block;
+      padding: 5px;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}
